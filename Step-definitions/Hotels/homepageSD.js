@@ -1,42 +1,32 @@
-const { Then, When } = require("@wdio/cucumber-framework");
-const Homepage = require("../../Pages/Hotels/Homepage");
-const Searchpage = require("../../Pages/Hotels/Searchpage");
+const { Given, Then, When } = require("@wdio/cucumber-framework");
 const { expect } = require("chai");
-const MyMomentFunctions = require('../../Utils/MyMomentFunctions');
-
+const Homepage = require("../../Pages/Hotels/homepage");
+const Rewardspage = require("../../Pages/Hotels/rewardspage");
 const homepage = new Homepage();
+const rewardspage = new Rewardspage();
 
-
-Then(/^I click on Dates button on Homepage$/, async function () {
-    await homepage.clickOnCalendarButton();
-});
-
-Then(/^I verify past dates on current month are displayed$/, async function () {
-    const disabledDates = await homepage.getDisableDatesForCurrentMonth();
-    console.log(`\n\nabc -> ${disabledDates.length}\n\n`);
-    const currentDate = MyMomentFunctions.getCurrentMomentInFormat('D');
-    expect(disabledDates.length, 'Number of disabled dates are not as expected').to.equal(currentDate-1);
+Given(/^I am on hotels landing page$/, async function() {
+    await browser.url('https://www.hotels.com/');
 });
 
 When(/^I click on Learn about Hotels.com Rewards$/, async function () {
-    await homepage.clickOnHotelRewards();
-})
+    await homepage.clickLearnAboutRewardsButton();
+});
 
-
-Then(/^I verify if Hotels Rewards opened in a new window$/), async function () {
+When(/^I verify Hotels Rewards opened in a new window$/, async function () {
     const allHandles = await browser.getWindowHandles();
-    expect(allHandles.length, 'Hotels did NOT open new window').to.equal(2);
-}
+    expect(await allHandles.length, 'Hotel rewards DID not open new tab').to.equal(2);
+});
 
-Then(/^I click on Join Now$/), async function () {
-    await homepage.clickOnJoinNow();
-}
+When(/^I click on Join Now$/, async function () {
+    await rewardspage.clickJoinNowButton();
+});
 
-Then(/^I verify the form is blank$/, async function () {
-    await homepage.createAccountForm();
-    expect(createAccountForm.length, 'Form is filled in'.to.equal(createAccountForm));
-})
+Then(/^I verify if form is blank$/, async function () {
+    expect (await rewardspage.blankFormVerification('Form is NOT blank')).to.be.empty;
+});
 
-Then(/^I verify that the Continue button is NOT enabled$/, async function () {
-    await homepage.continueButton();
-})
+Then(/^I verify Continue button is not enabled$/, async function () {
+    expect (await rewardspage.isContinueButtonEnabled(), 'Continue button is enabled').to.be.false;
+    
+});

@@ -18,8 +18,6 @@ class Searchpage {
         await this.commands.isWebElementDisplayedWithWait(this.searchByPropertyNameCopyLocator);
     }
 
-    
-
 
 
 }

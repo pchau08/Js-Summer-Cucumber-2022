@@ -154,3 +154,27 @@ class Commands {
 
 }
 module.exports = Commands;
+
+/**
+ * 1. Locator for all 12-datapoints
+ * [we1, we2, we3, ..., we12]
+ * []
+ * run a loop on above array and get text of every we
+ * [Now, 8pm, 10pm, ..., 8am]
+ * 
+ * 
+ * Moment
+ * using 
+ * const now = moment().format('ha')
+ * let arrayFromMoment = ['Now']
+ * run a loop to add 2-hours in now
+ * 
+ * for (let i=1; i < 12 ; i++) {
+ *      now.add(2, 'hours') 
+ *      arrayFromMoment.push(    now.format('ha')     )
+ * }
+ * 
+ * arrayFromMoment = ['Now', 8pm, 10pm, 12am, 2am, ..., ]
+ * 
+ * 
+ */
