@@ -1,0 +1,72 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663716562943' stop='1663716570978'>
+    <name>Midterm Exam</name>
+    <title>Midterm Exam</title>
+    <test-cases>
+        <test-case start='1663716562950' status='broken' stop='1663716570976'>
+            <name>Verify Hotels.com rewards page</name>
+            <title>Verify Hotels.com rewards page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663716562951' status='passed' stop='1663716570595'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663716570596' status='broken' stop='1663716570976'>
+                    <name>When I click on Learn about Hotels.com Rewards</name>
+                    <title>When I click on Learn about Hotels.com Rewards</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='49605524-f861-478d-897e-859df6bc6f96-attachment.png' type='image/png' size='1071366'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663716570976' status='canceled' stop='1663716570976'>
+                    <name>And I verify Hotels Rewards opened in a new window</name>
+                    <title>And I verify Hotels Rewards opened in a new window</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663716570976' status='canceled' stop='1663716570976'>
+                    <name>And I click on Join Now</name>
+                    <title>And I click on Join Now</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663716570977' status='canceled' stop='1663716570977'>
+                    <name>Then I verify if form is blank</name>
+                    <title>Then I verify if form is blank</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663716570977' status='canceled' stop='1663716570977'>
+                    <name>And I verify Continue button is not enabled</name>
+                    <title>And I verify Continue button is not enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>TypeError: homepage.clickLearnAboutRewardsButton is not a function</message>
+                <stack-trace>TypeError: homepage.clickLearnAboutRewardsButton is not a function
+                    at World.&lt;anonymous> (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Hotels/homepageSD.js:13:20)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async wrapPromiseWithTimeout (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/time.js:67:12)
+                    at async Object.run (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+                    at async Object.run (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+                    at async TestCaseRunner.invokeStep (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:93:16)
+                    at async TestCaseRunner.runStep (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:237:26)
+                    at async /Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:163:48</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

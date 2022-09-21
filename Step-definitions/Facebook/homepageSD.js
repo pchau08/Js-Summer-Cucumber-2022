@@ -8,9 +8,9 @@ const homepage = new Homepage();
 /**
  * Glue code is a regular expression which helps to map Scenario-steps with functions
  */
-Given(/^I click on (.+) link$/, async function(linkName) {
-    await homepage.clickLinkOnFooter(linkName);
-});
+// Given(/^I click on (.+) link$/, async function(linkName) {
+//     await homepage.clickLinkOnFooter(linkName);
+// });
 
 Given(/^I verify .+ opens in a new tab$/, async function() {
     const totalWindows = await homepage.getNumberOfWindows();
