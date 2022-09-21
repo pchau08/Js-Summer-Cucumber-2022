@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663721622700' stop='1663721624635'>
+    <name>Login: Verify login fields are enabled by default</name>
+    <title>Login: Verify login fields are enabled by default</title>
+    <test-cases>
+        <test-case start='1663721622701' status='passed' stop='1663721622702'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='2-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='msedge-105.0.1343.27'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663721622702' status='passed' stop='1663721624012'>
+            <name>Given I am on facebook landing page</name>
+            <title>Given I am on facebook landing page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='2-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='msedge-105.0.1343.27'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663721624012' status='passed' stop='1663721624274'>
+            <name>Then I verify login username field is enabled</name>
+            <title>Then I verify login username field is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='2-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='msedge-105.0.1343.27'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663721624274' status='passed' stop='1663721624446'>
+            <name>And I verify login password field is enabled</name>
+            <title>And I verify login password field is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='2-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='msedge-105.0.1343.27'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663721624446' status='passed' stop='1663721624634'>
+            <name>And I verify login button field is enabled</name>
+            <title>And I verify login button field is enabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='2-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='msedge-105.0.1343.27'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663721624634' status='passed' stop='1663721624635'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='2-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='msedge-105.0.1343.27'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
