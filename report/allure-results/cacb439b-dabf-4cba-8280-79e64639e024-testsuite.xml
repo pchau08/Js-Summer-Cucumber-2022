@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663973224820' stop='1663973232438'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663973224828' status='failed' stop='1663973232438'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663973224829' status='passed' stop='1663973228330'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663973228330' status='passed' stop='1663973228618'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663973228618' status='passed' stop='1663973229662'>
+                    <name>And I select "Adults" as 6</name>
+                    <title>And I select "Adults" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663973229663' status='passed' stop='1663973230433'>
+                    <name>And I select "Children" as 3</name>
+                    <title>And I select "Children" as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663973230433' status='passed' stop='1663973230973'>
+                    <name>And I select first child as age 4</name>
+                    <title>And I select first child as age 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663973230973' status='passed' stop='1663973231485'>
+                    <name>And I select second child as under age 1</name>
+                    <title>And I select second child as under age 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663973231485' status='passed' stop='1663973231983'>
+                    <name>And I select third child as age 7</name>
+                    <title>And I select third child as age 7</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663973231983' status='passed' stop='1663973232231'>
+                    <name>And I click Done</name>
+                    <title>And I click Done</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663973232232' status='failed' stop='1663973232437'>
+                    <name>Then I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</name>
+                    <title>Then I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9a67c0ff-3216-46a7-bb8f-bf73408423ae-attachment.png' type='image/png' size='1082840'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Total number of guest is NOT 9: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string</message>
+                <stack-trace>AssertionError: Total number of guest is NOT 9: the given combination of arguments (undefined and string) is invalid for this assertion. You can use an array, a map, an object, a set, a string, or a weakset instead of a string
+                    at World.&lt;anonymous> (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Hotels/homepageSD.js:72:92)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

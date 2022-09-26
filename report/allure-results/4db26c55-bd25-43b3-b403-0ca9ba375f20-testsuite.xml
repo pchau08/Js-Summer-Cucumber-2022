@@ -1,0 +1,101 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663996198315' stop='1663996204762'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663996198323' status='failed' stop='1663996204761'>
+            <name>TC-28 Verify Child-age dropdowns are same as number of Children selected</name>
+            <title>TC-28 Verify Child-age dropdowns are same as number of Children selected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663996198324' status='passed' stop='1663996202365'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996202365' status='passed' stop='1663996202640'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996202640' status='passed' stop='1663996203174'>
+                    <name>And I select "Children" as 2</name>
+                    <title>And I select "Children" as 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996203174' status='passed' stop='1663996203258'>
+                    <name>Then I verify Children-age dropdown are 2</name>
+                    <title>Then I verify Children-age dropdown are 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996203258' status='passed' stop='1663996203288'>
+                    <name>Then I verify plus-button is enabled</name>
+                    <title>Then I verify plus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996203288' status='passed' stop='1663996203303'>
+                    <name>Then I verify minus-button is enabled</name>
+                    <title>Then I verify minus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996203303' status='passed' stop='1663996204371'>
+                    <name>And I select "Children" as 6</name>
+                    <title>And I select "Children" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996204371' status='passed' stop='1663996204586'>
+                    <name>Then I verify children-age dropdown are 6</name>
+                    <title>Then I verify children-age dropdown are 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996204586' status='failed' stop='1663996204761'>
+                    <name>Then I verifiy plus button is disabled</name>
+                    <title>Then I verifiy plus button is disabled</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='85976364-cb65-4b26-97f2-14bf249fcff2-attachment.png' type='image/png' size='909899'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663996204761' status='canceled' stop='1663996204761'>
+                    <name>Then I verify minus button is enabled</name>
+                    <title>Then I verify minus button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996204761' status='canceled' stop='1663996204761'>
+                    <name>And I select "Children" as 5</name>
+                    <title>And I select "Children" as 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Plus button is enabled: expected true to be false</message>
+                <stack-trace>AssertionError: Plus button is enabled: expected true to be false
+                    + expected - actual
+                
+                    -true
+                    +false
+                
+                    at World.&lt;anonymous> (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Hotels/homepageSD.js:105:73)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

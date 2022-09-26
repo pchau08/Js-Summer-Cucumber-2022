@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663964010423' stop='1663964023215'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663964010429' status='passed' stop='1663964023214'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663964010430' status='passed' stop='1663964014655'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663964014655' status='passed' stop='1663964015044'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663964015044' status='passed' stop='1663964018096'>
+                    <name>And I select "Adults" as 6</name>
+                    <title>And I select "Adults" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663964018096' status='passed' stop='1663964020897'>
+                    <name>And I select "Children" as 3</name>
+                    <title>And I select "Children" as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663964020897' status='passed' stop='1663964023212'>
+                    <name>And I select first child as age 4</name>
+                    <title>And I select first child as age 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

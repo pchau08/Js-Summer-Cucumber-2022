@@ -36,6 +36,7 @@ class Commands {
         await element.click();
     }
 
+
     async scrollAndClickWebElement(locator) {
         const element = await this.findWebElement(locator);
         await element.scrollIntoView();
@@ -150,6 +151,7 @@ class Commands {
     async getWindowTitle() {
         return await browser.getTitle();
     }
+
 
 
 }

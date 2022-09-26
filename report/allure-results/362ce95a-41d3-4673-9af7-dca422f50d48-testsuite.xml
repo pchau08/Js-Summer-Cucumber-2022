@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663970488803' stop='1663970497528'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663970488809' status='broken' stop='1663970497528'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663970488810' status='passed' stop='1663970494607'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663970494607' status='passed' stop='1663970494918'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663970494918' status='passed' stop='1663970495946'>
+                    <name>And I select "Adults" as 6</name>
+                    <title>And I select "Adults" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663970495946' status='passed' stop='1663970496736'>
+                    <name>And I select "Children" as 3</name>
+                    <title>And I select "Children" as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663970496736' status='broken' stop='1663970497528'>
+                    <name>And I select first child as age 4</name>
+                    <title>And I select first child as age 4</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='eda14449-a41a-4308-a673-4443156b5dce-attachment.png' type='image/png' size='934233'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663970497528' status='canceled' stop='1663970497528'>
+                    <name>And I select second child as under age 1</name>
+                    <title>And I select second child as under age 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>javascript error: SyntaxError: missing ) in parenthetical</message>
+                <stack-trace>javascript error: SyntaxError: missing ) in parenthetical
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async Commands.findWebElement (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Commands.js:9:9)
+                    at async Commands.getTextFromWebElement (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Commands.js:88:25)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

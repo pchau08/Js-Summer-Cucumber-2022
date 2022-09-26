@@ -1,0 +1,76 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663972043532' stop='1663972051611'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663972043540' status='passed' stop='1663972051611'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663972043541' status='passed' stop='1663972047662'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972047662' status='passed' stop='1663972047942'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972047942' status='passed' stop='1663972048981'>
+                    <name>And I select "Adults" as 6</name>
+                    <title>And I select "Adults" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972048982' status='passed' stop='1663972049751'>
+                    <name>And I select "Children" as 3</name>
+                    <title>And I select "Children" as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972049751' status='passed' stop='1663972050294'>
+                    <name>And I select first child as age 4</name>
+                    <title>And I select first child as age 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972050294' status='passed' stop='1663972050796'>
+                    <name>And I select second child as under age 1</name>
+                    <title>And I select second child as under age 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972050796' status='passed' stop='1663972051312'>
+                    <name>And I select third child as age 7</name>
+                    <title>And I select third child as age 7</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972051312' status='passed' stop='1663972051568'>
+                    <name>And I click Done</name>
+                    <title>And I click Done</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972051568' status='passed' stop='1663972051610'>
+                    <name>Then I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</name>
+                    <title>Then I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

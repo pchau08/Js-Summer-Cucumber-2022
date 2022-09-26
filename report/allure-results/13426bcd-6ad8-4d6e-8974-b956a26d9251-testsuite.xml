@@ -1,0 +1,97 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663996031854' stop='1663996045908'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663996031864' status='broken' stop='1663996045907'>
+            <name>TC-28 Verify Child-age dropdowns are same as number of Children selected</name>
+            <title>TC-28 Verify Child-age dropdowns are same as number of Children selected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663996031866' status='passed' stop='1663996034728'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996034728' status='passed' stop='1663996034896'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996034896' status='passed' stop='1663996035122'>
+                    <name>And I select "Children" as 2</name>
+                    <title>And I select "Children" as 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996035122' status='passed' stop='1663996035177'>
+                    <name>Then I verify Children-age dropdown are 2</name>
+                    <title>Then I verify Children-age dropdown are 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996035177' status='passed' stop='1663996035197'>
+                    <name>Then I verify plus-button is enabled</name>
+                    <title>Then I verify plus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996035197' status='passed' stop='1663996035221'>
+                    <name>Then I verify minus-button is enabled</name>
+                    <title>Then I verify minus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996035221' status='broken' stop='1663996045907'>
+                    <name>And I select "Children" as 6</name>
+                    <title>And I select "Children" as 6</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='e638716a-c694-486d-9d48-9a61040a895b-attachment.png' type='image/png' size='836479'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1663996045907' status='canceled' stop='1663996045907'>
+                    <name>Then I verify children-age dropdown are 6</name>
+                    <title>Then I verify children-age dropdown are 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996045907' status='canceled' stop='1663996045907'>
+                    <name>Then I verifiy plus button is disabled</name>
+                    <title>Then I verifiy plus button is disabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996045907' status='canceled' stop='1663996045907'>
+                    <name>Then I verify minus button is enabled</name>
+                    <title>Then I verify minus button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996045907' status='canceled' stop='1663996045907'>
+                    <name>And I select "Children" as 5</name>
+                    <title>And I select "Children" as 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: element ("//span//*[@aria-label="Increase the number of children in room 1"]") still not clickable after 10000ms</message>
+                <stack-trace>Error: element ("//span//*[@aria-label="Increase the number of children in room 1"]") still not clickable after 10000ms
+                    at async Commands.findClickableWebElement (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Commands.js:14:9)
+                    at async Commands.clickWebElement (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Commands.js:35:25)
+                    at async Homepage.clickTravelersChildren (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Hotels/homepage.js:75:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

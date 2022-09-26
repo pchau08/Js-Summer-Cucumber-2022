@@ -1,0 +1,102 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663996436989' stop='1663996443611'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663996436997' status='broken' stop='1663996443609'>
+            <name>TC-28 Verify Child-age dropdowns are same as number of Children selected</name>
+            <title>TC-28 Verify Child-age dropdowns are same as number of Children selected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663996436998' status='passed' stop='1663996441098'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996441098' status='passed' stop='1663996441389'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996441389' status='passed' stop='1663996441951'>
+                    <name>And I select "Children" as 2</name>
+                    <title>And I select "Children" as 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996441951' status='passed' stop='1663996442024'>
+                    <name>Then I verify Children-age dropdown are 2</name>
+                    <title>Then I verify Children-age dropdown are 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996442024' status='passed' stop='1663996442044'>
+                    <name>Then I verify plus-button is enabled</name>
+                    <title>Then I verify plus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996442044' status='passed' stop='1663996442059'>
+                    <name>Then I verify minus-button is enabled</name>
+                    <title>Then I verify minus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996442059' status='passed' stop='1663996443108'>
+                    <name>And I select "Children" as 6</name>
+                    <title>And I select "Children" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996443108' status='passed' stop='1663996443322'>
+                    <name>Then I verify children-age dropdown are 6</name>
+                    <title>Then I verify children-age dropdown are 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996443322' status='passed' stop='1663996443336'>
+                    <name>Then I verifiy plus button is disabled</name>
+                    <title>Then I verifiy plus button is disabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996443337' status='passed' stop='1663996443347'>
+                    <name>Then I verify minus button is enabled</name>
+                    <title>Then I verify minus button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996443347' status='passed' stop='1663996443607'>
+                    <name>And I select "Children" as 5</name>
+                    <title>And I select "Children" as 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663996443607' status='broken' stop='1663996443608'>
+                    <name>Then I verify Children-age dropdown are 5</name>
+                    <title>Then I verify Children-age dropdown are 5</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I verify Children-age dropdown are 5" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I verify Children-age dropdown are 5" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/features/Hotels/signin.feature):1:1
+                	at Scenario(TC-28 Verify Child-age dropdowns are same as number of Children selected):37:4
+                	at Step(I verify Children-age dropdown are 5):49:7
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

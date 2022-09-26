@@ -26,10 +26,6 @@ Scenario: Verify login fields are enabled by default
 #         Then I verify error is displayed 
         
 
-
-
-
-
 # @fbhomepage @regression @fb
 # Feature: Login
 
