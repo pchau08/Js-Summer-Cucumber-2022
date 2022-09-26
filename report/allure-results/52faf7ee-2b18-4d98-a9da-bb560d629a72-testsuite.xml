@@ -1,0 +1,58 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663909033328' stop='1663909037598'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663909033333' status='broken' stop='1663909037597'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663909033334' status='passed' stop='1663909037138'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663909037138' status='passed' stop='1663909037424'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663909037424' status='broken' stop='1663909037597'>
+                    <name>And I select "Adults" as 6</name>
+                    <title>And I select "Adults" as 6</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='4c15fd1e-a59b-4655-b5be-390af7775b35-attachment.png' type='image/png' size='915436'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: function uses multiple asynchronous interfaces: callback and promise</message>
+                <stack-trace>Error: function uses multiple asynchronous interfaces: callback and promise
+                to use the callback interface: do not return a promise
+                to use the promise interface: remove the last argument to the function
+                    at Object.run (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/user_code_runner.js:35:24)
+                    at Object.run (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:59)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async TestCaseRunner.invokeStep (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:93:16)
+                    at async TestCaseRunner.runStep (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:237:26)
+                    at async /Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:163:48
+                    at async TestCaseRunner.aroundTestStep (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:117:32)
+                    at async TestCaseRunner.run (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:146:17)
+                    at async Runtime.runTestCase (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/index.js:41:24)
+                    at async Runtime.start (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/index.js:65:13)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

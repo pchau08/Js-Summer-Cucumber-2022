@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663869863854' stop='1663869869499'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663869863859' status='passed' stop='1663869869498'>
+            <name>Verify user can submit feedback after completing the feedback form</name>
+            <title>Verify user can submit feedback after completing the feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663869863860' status='passed' stop='1663869869119'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663869869119' status='passed' stop='1663869869410'>
+                    <name>When I click on Sign in link</name>
+                    <title>When I click on Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663869869410' status='passed' stop='1663869869497'>
+                    <name>And I click on feedback</name>
+                    <title>And I click on feedback</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

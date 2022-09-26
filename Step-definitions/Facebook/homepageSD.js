@@ -12,8 +12,8 @@ const homepage = new Homepage();
 //     await homepage.clickLinkOnFooter(linkName);
 // });
 
-Given(/^I verify .+ opens in a new tab$/, async function() {
-    const totalWindows = await homepage.getNumberOfWindows();
-    expect(totalWindows, 'There is no new window').to.equal(2);
-    await homepage.closeWindowExceptHome();
-});
+// Given(/^I verify .+ opens in a new tab$/, async function() {
+//     const totalWindows = await homepage.getNumberOfWindows();
+//     expect(totalWindows, 'There is no new window').to.equal(2);
+//     await homepage.closeWindowExceptHome();
+// });

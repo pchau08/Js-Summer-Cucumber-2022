@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663963710499' stop='1663963720947'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663963710504' status='broken' stop='1663963720945'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663963710505' status='passed' stop='1663963714723'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663963714723' status='passed' stop='1663963715064'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663963715064' status='passed' stop='1663963718101'>
+                    <name>And I select "Adults" as 6</name>
+                    <title>And I select "Adults" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663963718101' status='passed' stop='1663963720942'>
+                    <name>And I select "Children" as 3</name>
+                    <title>And I select "Children" as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663963720943' status='broken' stop='1663963720944'>
+                    <name>And I select first child as age 4</name>
+                    <title>And I select first child as age 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Step "I select first child as age 4" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.</message>
+                <stack-trace>Step "I select first child as age 4" is not defined. You can ignore this error by setting cucumberOpts.ignoreUndefinedDefinitions as true.
+                	at Feature(/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/features/Hotels/signin.feature):1:1
+                	at Scenario(Verify user can update number of guests on Home page):25:4
+                	at Step(I select first child as age 4):30:7
+                </stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

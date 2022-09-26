@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663880625633' stop='1663880640372'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663880625639' status='broken' stop='1663880640371'>
+            <name>Verify user can submit feedback after completing the feedback form</name>
+            <title>Verify user can submit feedback after completing the feedback form</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1663880625640' status='passed' stop='1663880629190'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663880629190' status='passed' stop='1663880629355'>
+                    <name>When I click on Sign in link</name>
+                    <title>When I click on Sign in link</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663880629355' status='passed' stop='1663880630015'>
+                    <name>And I click on feedback</name>
+                    <title>And I click on feedback</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663880630015' status='broken' stop='1663880640371'>
+                    <name>And I select any star-rating</name>
+                    <title>And I select any star-rating</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='110aaf9a-8a73-42b6-960e-1b5ad23c9e97-attachment.png' type='image/png' size='913703'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: element ("//input[@id='page-rating-2']") still not clickable after 10000ms</message>
+                <stack-trace>Error: element ("//input[@id='page-rating-2']") still not clickable after 10000ms
+                    at async Commands.findClickableWebElement (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/commands.js:14:9)
+                    at async Commands.clickWebElement (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/commands.js:35:25)
+                    at async Feedbackpage.selectAnyStarRating (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Hotels/Feedbackpage.js:20:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

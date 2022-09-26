@@ -1,0 +1,66 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663985984804' stop='1663985990071'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663985984811' status='broken' stop='1663985990071'>
+            <name>TC-28 Verify Child-age dropdowns are same as number of Children selected</name>
+            <title>TC-28 Verify Child-age dropdowns are same as number of Children selected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663985984812' status='passed' stop='1663985989051'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663985989051' status='passed' stop='1663985989336'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663985989336' status='passed' stop='1663985989860'>
+                    <name>And I select "Children" as 2</name>
+                    <title>And I select "Children" as 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663985989860' status='passed' stop='1663985989931'>
+                    <name>Then I verify Children-age dropdown are 2</name>
+                    <title>Then I verify Children-age dropdown are 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663985989931' status='broken' stop='1663985990071'>
+                    <name>Then I verify plus-button is enabled</name>
+                    <title>Then I verify plus-button is enabled</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='c46c81d3-e1c5-490b-960c-4290ffa76c70-attachment.png' type='image/png' size='839488'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>ReferenceError: command is not defined</message>
+                <stack-trace>ReferenceError: command is not defined
+                    at Homepage.plusEnabled (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Hotels/homepage.js:117:9)
+                    at World.&lt;anonymous> (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Hotels/homepageSD.js:85:27)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                    at async wrapPromiseWithTimeout (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/time.js:67:12)
+                    at async Object.run (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/user_code_runner.js:64:22)
+                    at async Object.run (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/step_runner.js:52:26)
+                    at async TestCaseRunner.invokeStep (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:93:16)
+                    at async TestCaseRunner.runStep (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/node_modules/@cucumber/cucumber/lib/runtime/test_case_runner.js:237:26)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

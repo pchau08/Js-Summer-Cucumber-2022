@@ -1,0 +1,84 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663972375206' stop='1663972384264'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663972375218' status='failed' stop='1663972384263'>
+            <name>Verify user can update number of guests on Home page</name>
+            <title>Verify user can update number of guests on Home page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663972375219' status='passed' stop='1663972380018'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972380018' status='passed' stop='1663972380331'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972380331' status='passed' stop='1663972381385'>
+                    <name>And I select "Adults" as 6</name>
+                    <title>And I select "Adults" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972381385' status='passed' stop='1663972382145'>
+                    <name>And I select "Children" as 3</name>
+                    <title>And I select "Children" as 3</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972382145' status='passed' stop='1663972382756'>
+                    <name>And I select first child as age 4</name>
+                    <title>And I select first child as age 4</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972382756' status='passed' stop='1663972383288'>
+                    <name>And I select second child as under age 1</name>
+                    <title>And I select second child as under age 1</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972383288' status='passed' stop='1663972383804'>
+                    <name>And I select third child as age 7</name>
+                    <title>And I select third child as age 7</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972383805' status='passed' stop='1663972384061'>
+                    <name>And I click Done</name>
+                    <title>And I click Done</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663972384061' status='failed' stop='1663972384263'>
+                    <name>Then I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</name>
+                    <title>Then I Verify total number of guests in sum of adults and children as same as selected on step #3 and #4.</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9fef6e41-182f-424a-8f0b-767c215f91dd-attachment.png' type='image/png' size='1097193'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Total number of guest is NOT 9: expected undefined to equal 9</message>
+                <stack-trace>AssertionError: Total number of guest is NOT 9: expected undefined to equal 9
+                    at World.&lt;anonymous> (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Hotels/homepageSD.js:72:91)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

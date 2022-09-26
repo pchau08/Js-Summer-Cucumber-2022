@@ -1,0 +1,89 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663988046663' stop='1663988052958'>
+    <name>Sign in</name>
+    <title>Sign in</title>
+    <test-cases>
+        <test-case start='1663988046673' status='failed' stop='1663988052957'>
+            <name>TC-28 Verify Child-age dropdowns are same as number of Children selected</name>
+            <title>TC-28 Verify Child-age dropdowns are same as number of Children selected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1663988046674' status='passed' stop='1663988050593'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663988050593' status='passed' stop='1663988050891'>
+                    <name>When I click on Travelers</name>
+                    <title>When I click on Travelers</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663988050891' status='passed' stop='1663988051461'>
+                    <name>And I select "Children" as 2</name>
+                    <title>And I select "Children" as 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663988051461' status='passed' stop='1663988051538'>
+                    <name>Then I verify Children-age dropdown are 2</name>
+                    <title>Then I verify Children-age dropdown are 2</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663988051538' status='passed' stop='1663988051549'>
+                    <name>Then I verify plus-button is enabled</name>
+                    <title>Then I verify plus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663988051549' status='passed' stop='1663988051562'>
+                    <name>Then I verify minus-button is enabled</name>
+                    <title>Then I verify minus-button is enabled</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663988051562' status='passed' stop='1663988052602'>
+                    <name>And I select "Children" as 6</name>
+                    <title>And I select "Children" as 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663988052602' status='passed' stop='1663988052802'>
+                    <name>Then I verify children-age dropdown are 6</name>
+                    <title>Then I verify children-age dropdown are 6</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1663988052802' status='failed' stop='1663988052957'>
+                    <name>Then I verifiy plus button is disabled</name>
+                    <title>Then I verifiy plus button is disabled</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='2ed06b85-fb9b-4e1d-9675-94dc98e46172-attachment.png' type='image/png' size='792819'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: Plus button is NOT enabled: expected true to be false</message>
+                <stack-trace>AssertionError: Plus button is NOT enabled: expected true to be false
+                    + expected - actual
+                
+                    -true
+                    +false
+                
+                    at World.&lt;anonymous> (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Hotels/homepageSD.js:104:77)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
