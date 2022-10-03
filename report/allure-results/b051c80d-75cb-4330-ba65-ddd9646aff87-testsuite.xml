@@ -1,0 +1,46 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664380793135' stop='1664380803508'>
+    <name>Sprint 2</name>
+    <title>Sprint 2</title>
+    <test-cases>
+        <test-case start='1664380793158' status='passed' stop='1664380803507'>
+            <name>TC-23 Hotels: Verify filter-by and sort-by functionality works as expected</name>
+            <title>TC-23 Hotels: Verify filter-by and sort-by functionality works as expected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664380793162' status='passed' stop='1664380799339'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664380799339' status='passed' stop='1664380800684'>
+                    <name>When I search for "Manhattan, NY"</name>
+                    <title>When I search for "Manhattan, NY"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664380800684' status='passed' stop='1664380802435'>
+                    <name>And I enter Check-in date as Jan-10-2023</name>
+                    <title>And I enter Check-in date as Jan-10-2023</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664380802435' status='passed' stop='1664380803506'>
+                    <name>And I enter Check-in date as Jan-23-2023</name>
+                    <title>And I enter Check-in date as Jan-23-2023</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

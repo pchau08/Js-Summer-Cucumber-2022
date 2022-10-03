@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664248942488' stop='1664248946545'>
+    <name>Sprint 2</name>
+    <title>Sprint 2</title>
+    <test-cases>
+        <test-case start='1664248942496' status='broken' stop='1664248946544'>
+            <name>TC-17 Verify past dates and back button on Current month's calendar is disabled</name>
+            <title>TC-17 Verify past dates and back button on Current month's calendar is disabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664248942497' status='passed' stop='1664248945753'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664248945753' status='passed' stop='1664248945896'>
+                    <name>When I click on "Dates"</name>
+                    <title>When I click on "Dates"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664248945897' status='passed' stop='1664248946236'>
+                    <name>And I go to current month if not displayed</name>
+                    <title>And I go to current month if not displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664248946236' status='broken' stop='1664248946544'>
+                    <name>Then I verify for the current month</name>
+                    <title>Then I verify for the current month</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='9e75b13d-1978-4578-b18b-2f6713fa1a36-attachment.png' type='image/png' size='520709'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>ReferenceError: September is not defined</message>
+                <stack-trace>ReferenceError: September is not defined
+                    at World.&lt;anonymous> (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Hotels/homepageSD.js:173:90)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

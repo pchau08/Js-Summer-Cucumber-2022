@@ -1,4 +1,6 @@
+const moment = require("moment");
 class Commands {
+    moment = new moment();
 
 
     /**
@@ -89,6 +91,7 @@ class Commands {
         return await element.getText();
     }
 
+
     /**
      * Generic function to select value from auto suggestion
      * Input: valueToSelect, locatorForAutoSuggestionElements
@@ -152,9 +155,32 @@ class Commands {
         return await browser.getTitle();
     }
 
+    async format(forms, number, withoutSuffix) {
+    if (withoutSuffix) {
+        // E.g. "21 minūte", "3 minūtes".
+        return number % 10 === 1 && number % 100 !== 11 ? forms[2] : forms[3];
+    } else {
+        // E.g. "21 minūtes" as in "pēc 21 minūtes".
+        // E.g. "3 minūtēm" as in "pēc 3 minūtēm".
+        return number % 10 === 1 && number % 100 !== 11 ? forms[0] : forms[1];
+    }
+    }
+
+    async scrollAndGetTextWebElement(locator) {
+        const element = await this.findWebElement(locator);
+        await element.scrollIntoView();
+        return await element.getText();
+    }
+
+
+
+
+
+
 
 
 }
+
 module.exports = Commands;
 
 /**

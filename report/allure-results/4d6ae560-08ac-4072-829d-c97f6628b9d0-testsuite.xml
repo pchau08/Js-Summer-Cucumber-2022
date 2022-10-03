@@ -1,0 +1,78 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664409340222' stop='1664409352008'>
+    <name>Sprint 2</name>
+    <title>Sprint 2</title>
+    <test-cases>
+        <test-case start='1664409340230' status='failed' stop='1664409352007'>
+            <name>TC-19 Verify Share feedback button is displayed at the end of search results</name>
+            <title>TC-19 Verify Share feedback button is displayed at the end of search results</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1664409340231' status='passed' stop='1664409345232'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664409345232' status='passed' stop='1664409345797'>
+                    <name>When I enter "bora" in destination</name>
+                    <title>When I enter "bora" in destination</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664409345797' status='passed' stop='1664409346627'>
+                    <name>And I select "Bora Bora, Leeward Islands, French Polynesia" from auto suggestion</name>
+                    <title>And I select "Bora Bora, Leeward Islands, French Polynesia" from auto suggestion</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664409346627' status='passed' stop='1664409347539'>
+                    <name>And I select Select Dec 1, 2022 as Check-in</name>
+                    <title>And I select Select Dec 1, 2022 as Check-in</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664409347539' status='passed' stop='1664409347862'>
+                    <name>And I Select Dec 10, 2022 as Check-out</name>
+                    <title>And I Select Dec 10, 2022 as Check-out</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664409347862' status='passed' stop='1664409348124'>
+                    <name>And I Click Apply</name>
+                    <title>And I Click Apply</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664409348124' status='passed' stop='1664409351859'>
+                    <name>And I click "Search" button</name>
+                    <title>And I click "Search" button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664409351859' status='failed' stop='1664409352007'>
+                    <name>Then I verify search results will show the following text: Tell us how we can improve our site is displayed</name>
+                    <title>Then I verify search results will show the following text: Tell us how we can improve our site is displayed</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='640a23f7-5601-4b2d-a1a3-9ea05072ecbf-attachment.png' type='image/png' size='131523'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>AssertionError: does NOT display improve our site: expected undefined to be true</message>
+                <stack-trace>AssertionError: does NOT display improve our site: expected undefined to be true
+                    at World.&lt;anonymous> (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/step-definitions/Hotels/homepageSD.js:254:100)
+                    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,64 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664415562694' stop='1664415578417'>
+    <name>Sprint 2</name>
+    <title>Sprint 2</title>
+    <test-cases>
+        <test-case start='1664415562703' status='passed' stop='1664415578417'>
+            <name>TC-23 Hotels: Verify filter-by and sort-by functionality works as expected</name>
+            <title>TC-23 Hotels: Verify filter-by and sort-by functionality works as expected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1664415562704' status='passed' stop='1664415567354'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664415567354' status='passed' stop='1664415568599'>
+                    <name>When I search for "Manhattan, NY"</name>
+                    <title>When I search for "Manhattan, NY"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664415568600' status='passed' stop='1664415569808'>
+                    <name>And I enter Check-in date as Jan-10-2023</name>
+                    <title>And I enter Check-in date as Jan-10-2023</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664415569808' status='passed' stop='1664415570505'>
+                    <name>And I enter Check-in date as Jan-23-2023</name>
+                    <title>And I enter Check-in date as Jan-23-2023</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664415570506' status='passed' stop='1664415577416'>
+                    <name>And I click on the Search button</name>
+                    <title>And I click on the Search button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664415577416' status='passed' stop='1664415577824'>
+                    <name>And I click on 5 star from star-rating filter</name>
+                    <title>And I click on 5 star from star-rating filter</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664415577824' status='passed' stop='1664415578414'>
+                    <name>And I select “Price” from sort-by dropdown</name>
+                    <title>And I select “Price” from sort-by dropdown</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

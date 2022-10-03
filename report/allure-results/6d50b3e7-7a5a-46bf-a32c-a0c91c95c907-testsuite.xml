@@ -1,0 +1,61 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664380301486' stop='1664380322124'>
+    <name>Sprint 2</name>
+    <title>Sprint 2</title>
+    <test-cases>
+        <test-case start='1664380301498' status='broken' stop='1664380322122'>
+            <name>TC-23 Hotels: Verify filter-by and sort-by functionality works as expected</name>
+            <title>TC-23 Hotels: Verify filter-by and sort-by functionality works as expected</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664380301500' status='passed' stop='1664380308030'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664380308030' status='passed' stop='1664380309208'>
+                    <name>When I search for "Manhattan, NY"</name>
+                    <title>When I search for "Manhattan, NY"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664380309208' status='passed' stop='1664380310799'>
+                    <name>And I enter Check-in date as Jan-10-2023</name>
+                    <title>And I enter Check-in date as Jan-10-2023</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664380310800' status='broken' stop='1664380322122'>
+                    <name>And I enter Check-in date as Jan-23-2023</name>
+                    <title>And I enter Check-in date as Jan-23-2023</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='2336ac16-e821-4f63-a1b1-69bed7be1ec0-attachment.png' type='image/png' size='791163'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664380322122' status='canceled' stop='1664380322123'>
+                    <name>And I click on the Search button</name>
+                    <title>And I click on the Search button</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: element ("#traveler_selector_done_button") still not clickable after 10000ms</message>
+                <stack-trace>Error: element ("#traveler_selector_done_button") still not clickable after 10000ms
+                    at async Commands.findClickableWebElement (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Commands.js:16:9)
+                    at async Commands.clickWebElement (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Commands.js:37:25)
+                    at async Homepage.clickDoneAfterTravelDates (/Users/tonychau/Documents/git/Js-Summer-Cucumber-2022/Pages/Hotels/homepage.js:255:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

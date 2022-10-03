@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664326013342' stop='1664326018192'>
+    <name>Sprint 2</name>
+    <title>Sprint 2</title>
+    <test-cases>
+        <test-case start='1664326013347' status='passed' stop='1664326018192'>
+            <name>TC-17 Verify past dates and back button on Current month's calendar is disabled</name>
+            <title>TC-17 Verify past dates and back button on Current month's calendar is disabled</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='1-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps>
+                <step start='1664326013348' status='passed' stop='1664326017560'>
+                    <name>Given I am on hotels landing page</name>
+                    <title>Given I am on hotels landing page</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664326017560' status='passed' stop='1664326017872'>
+                    <name>When I click on "Dates"</name>
+                    <title>When I click on "Dates"</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664326017872' status='passed' stop='1664326018190'>
+                    <name>And I go to current month if not displayed</name>
+                    <title>And I go to current month if not displayed</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
